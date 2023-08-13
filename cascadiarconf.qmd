@@ -1,0 +1,66 @@
+---
+title: "Traditional Statistical Programmers Embrace R to Expand their Toolkits"
+author: "Kangjie Zhang"
+date: "2023-08-19"
+format: revealjs
+editor: visual
+slide-number: true
+---
+
+# My day-to-day work
+
+## Three Pairs of Relationship
+::: {.fragment}
+
+
+![](3rel.PNG){fig-align="center"}
+::: 
+
+## Two Attitudes
+
+
+::: {.fragment}
+![](https://media.giphy.com/media/0UdHxnR0L7u05hVV0h/giphy.gif){width=70%"} 
+:::
+
+::: {.fragment}
+
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnIwZ2U3dGR5c2M3dzJpZXI1MHZyeHUwazNmbWJib2FwaWU5cHU4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eg3tTqoOegYLbzcPdJ/giphy-downsized-large.gif){width="30%"}
+:::
+
+::: {.fragment}
+
+* Imeplementation of TLF specifications
+* Communicate, propose new layout/methods of displaying to improve efficiency 
+:::
+
+## One Job
+
+> 1.  Statistical Analysis: Collaborate with cross-functional teams to develop and execute statistical analysis plans. Apply advanced statistical methods to analyze complex data sets, interpret results, and generate actionable insights.
+> 2.  Programming and Data Manipulation: Write efficient and well-documented code to manipulate, transform, and clean data. Develop and maintain data pipelines and scripts to ensure consistent and accurate data preparation for analysis.
+
+
+# Initiatives in R
+
+## Data Visulization 
+
+## What's ADaM?
+
+## Why Pharmaverse?
+
+![](base_tidy_pharma.png){fig-align="center"}
+
+## Does it work?
+
+## How to take advantage of existing tools?
+
+## Strategies 
+
+# My future work
+
+## Split & Merge
+
+Developer & User closer relationship
+
+# Health for all, Hunger for none
+
