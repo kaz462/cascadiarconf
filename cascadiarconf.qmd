@@ -12,6 +12,42 @@ slide-number: true
 
 # My day-to-day work
 
+## Four Years
+
+```{r}
+library(tibble)
+library(ggplot2)
+data <- tribble(
+  ~Year,  ~R, ~SAS,
+  2019, 0,  100,
+  2020, 0,  100,
+  2021, 0,  100,
+  2021.5, 0,  100,
+  2022, 20,  80,
+  2023, 80,  20,
+  2023.5, 80,  20
+)
+
+temperatureColor <- "#69b3a2"
+priceColor <- rgb(0.2, 0.6, 0.9, 1)
+
+ggplot(data, aes(x=Year)) +
+  geom_line( aes(y=R, group = 1), size=2, color=temperatureColor) + 
+  geom_line( aes(y=SAS, group = 1), size=2, color=priceColor) + 
+  scale_y_continuous(
+    # Features of the first axis
+    name = "R",
+    # Add a second axis and specify its features
+    sec.axis = sec_axis(~.*1, name="SAS")
+  ) +
+  theme_bw() +
+  theme(
+    axis.title.y = element_text(color = temperatureColor, size=13),
+    axis.title.y.right = element_text(color = priceColor, size=13)
+  ) +
+  ggtitle("My SAS & R Usage (%) as a Statistical Programmer") 
+```
+
 ## Three Pairs of Relationship
 
 ::: fragment
@@ -51,15 +87,16 @@ Communication: propose new layout/methods of displaying to improve efficiency
 ## One Job
 
 ::: fragment
+![](1%20tool.jpg){.absolute top="100" left="0" width="200"}
 :::
 
 ::: fragment
--   Imeplementation of TLF specifications
--   Communicate, propose new layout/methods of displaying to improve efficiency
+![](2%20ikea_spec.jpg){.absolute top="100" right="0" width="60%"}
 :::
 
-> 1.  Statistical Analysis: Collaborate with cross-functional teams to develop and execute statistical analysis plans. Apply advanced statistical methods to analyze complex data sets, interpret results, and generate actionable insights.
-> 2.  Programming and Data Manipulation: Write efficient and well-documented code to manipulate, transform, and clean data. Develop and maintain data pipelines and scripts to ensure consistent and accurate data preparation for analysis.
+::: fragment
+![](3.jpg){.absolute bottom="50" right="250" width="60%"}
+:::
 
 # Initiatives in R
 
@@ -80,40 +117,43 @@ Communication: propose new layout/methods of displaying to improve efficiency
 ![](base_tidy_pharma.png){fig-align="center"}
 
 ## Does it work?
-::: {.incremental}
-- R Consortium R Submission Working Group: a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions.
 
+::: incremental
+-   R Consortium R Submission Working Group: a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions.
 
-- Work closely with CDISC (Clinical Data Interchange Standards Consortium) working group, to align with the latest standards
+-   Work closely with CDISC (Clinical Data Interchange Standards Consortium) working group, to align with the latest standards
 
-- Advertising through conferences/social media/blog post
-
+-   Advertising through conferences/social media/blog post
 :::
 
 ## How to take advantage of existing tools?
-::: {.incremental}
 
-- Actively evaluating what's available in the industry
-- Familiar with company-specific metadata/standards 
-- Compare with internal SAS macro system 
-- Bridge the gap between open-source R packages and the company's internal resources. 
-
-
+::: incremental
+-   Actively evaluating what's available in the industry
+-   Familiar with company-specific metadata/standards
+-   Compare with internal SAS macro system
+-   Bridge the gap between open-source R packages and the company's internal resources.
 :::
 
 ::: fragment
-
-![](bridge.png){fig-align="center" width=30%}
+![](bridge.png){fig-align="center" width="30%"}
 :::
+
 ## Strategies
-3 repos
+
+3 repos Study work with R: development/testing area, focusing `admiral` and its extension package
+
+Leverage metadata/define.xml metacore metatools xportr Validation diffdf arsenal - Quarto website for knowledge sharing.
+
+-   Internal R package: A toolbox that enables users from Bayer to program ADaM according to the Bayer-specific standard. It also includes a set of functions for the definx.xml process in R, allowing for smooth utilization of pharmaverse packages within the Bayer environment.
+
+# Conclusion 
+
+- R can be used as a powerful complement to traditional statistical programming languages, such as SAS. 
+- Collaborate across the industry to tackle common problems
+- Closer relationship between user and developers to deliver better products 
+- Provide value to their organizations/industry.
 
 
-
-# My future work
-
-## Split & Merge
-
-Developer & User closer relationship
 
 # Health for all, Hunger for none
