@@ -2,7 +2,10 @@
 title: "Traditional Statistical Programmers Embrace R to Expand their Toolkits"
 author: "Kangjie Zhang"
 date: "2023-08-19"
-format: revealjs
+format:
+  revealjs: 
+    logo: https://upload.wikimedia.org/wikipedia/commons/f/f7/Logo_Bayer.svg
+    css: logo.css
 editor: visual
 slide-number: true
 ---
@@ -10,51 +13,102 @@ slide-number: true
 # My day-to-day work
 
 ## Three Pairs of Relationship
-::: {.fragment}
 
-
+::: fragment
 ![](3rel.PNG){fig-align="center"}
-::: 
+:::
 
 ## Two Attitudes
 
-
-::: {.fragment}
-![](https://media.giphy.com/media/0UdHxnR0L7u05hVV0h/giphy.gif){width=70%"} 
+::: columns
+::: {.column width="50%"}
+::: fragment
+![](https://media.giphy.com/media/0UdHxnR0L7u05hVV0h/giphy.gif){width="70%\""}
+:::
 :::
 
-::: {.fragment}
-
-![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnIwZ2U3dGR5c2M3dzJpZXI1MHZyeHUwazNmbWJib2FwaWU5cHU4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eg3tTqoOegYLbzcPdJ/giphy-downsized-large.gif){width="30%"}
+::: {.column width="50%"}
+::: fragment
+Program based on specifications
+:::
+:::
 :::
 
-::: {.fragment}
+::: columns
+::: {.column width="50%"}
+::: fragment
+Communication: propose new layout/methods of displaying to improve efficiency
+:::
+:::
 
-* Imeplementation of TLF specifications
-* Communicate, propose new layout/methods of displaying to improve efficiency 
+::: {.column width="50%"}
+::: fragment
+![](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnIwZ2U3dGR5c2M3dzJpZXI1MHZyeHUwazNmbWJib2FwaWU5cHU4ZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/eg3tTqoOegYLbzcPdJ/giphy-downsized-large.gif){.absolute bottom="10" right="50" width="400"}
+:::
+:::
 :::
 
 ## One Job
 
+::: fragment
+:::
+
+::: fragment
+-   Imeplementation of TLF specifications
+-   Communicate, propose new layout/methods of displaying to improve efficiency
+:::
+
 > 1.  Statistical Analysis: Collaborate with cross-functional teams to develop and execute statistical analysis plans. Apply advanced statistical methods to analyze complex data sets, interpret results, and generate actionable insights.
 > 2.  Programming and Data Manipulation: Write efficient and well-documented code to manipulate, transform, and clean data. Develop and maintain data pipelines and scripts to ensure consistent and accurate data preparation for analysis.
 
-
 # Initiatives in R
 
-## Data Visulization 
+## Data Visulization
 
 ## What's ADaM?
+
+> ADaM defines dataset and metadata standards that support:
+
+> -   efficient generation, replication, and review of clinical trial statistical analyses, and
+>
+> -   traceability among analysis results, analysis data, and data represented in the Study Data Tabulation Model (SDTM).
+
+> ADaM is one of the required standards for data submission to FDA (U.S.) and PMDA (Japan).
 
 ## Why Pharmaverse?
 
 ![](base_tidy_pharma.png){fig-align="center"}
 
 ## Does it work?
+::: {.incremental}
+- R Consortium R Submission Working Group: a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions.
+
+
+- Work closely with CDISC (Clinical Data Interchange Standards Consortium) working group, to align with the latest standards
+
+- Advertising through conferences/social media/blog post
+
+:::
 
 ## How to take advantage of existing tools?
+::: {.incremental}
 
-## Strategies 
+- Actively evaluating what's available in the industry
+- Familiar with company-specific metadata/standards 
+- Compare with internal SAS macro system 
+- Bridge the gap between open-source R packages and the company's internal resources. 
+
+
+:::
+
+::: fragment
+
+![](bridge.png){fig-align="center" width=30%}
+:::
+## Strategies
+3 repos
+
+
 
 # My future work
 
@@ -63,4 +117,3 @@ slide-number: true
 Developer & User closer relationship
 
 # Health for all, Hunger for none
-
