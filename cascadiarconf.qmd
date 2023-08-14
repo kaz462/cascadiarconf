@@ -100,30 +100,58 @@ Communication: propose new layout/methods of displaying to improve efficiency
 
 # Initiatives in R
 
-## Data Visulization
+## Data Visualization
 
-::: {.r-stack}
-![](lego.png){.fragment .absolute left="100" bottom="50" width="65%"}
+::: r-stack
+```{r, echo=TRUE, eval=FALSE}
+%BoxPlot(
+    data           
+  , X
+  , y
+  , class
+  , title
+  , subtitle
+  , legendtitle
+  , legend_pos
+  , xlabel
+  , ylabel
+  , style
+  , xrange
+  , xincrement
+  , yrange
+  , yincrement
+  , boxcolor
+  , boxsize
+  , dot
+  , outlier_size
+  , outlier_color 
+  , output
+  , ...
+);
+```
 
-![](lego_templates.jpg){.fragment  width="100%"}
+![](lego.png){.fragment .absolute left="80" bottom="30" width="72%"}
 
-<!-- ![](image3.png){.fragment width="400" height="400"} -->
+![](lego_templates.jpg){.fragment width="100%"}
 :::
 
+::: notes
+1.  lack of flexibility
+2.  learning curve, require good documentation, heavily reply on internal expert
 
+ggplot2: intuitive and layered grammar of graphics approach, easier to create complex visualizations with relatively concise code.\
+high level of customization with a wide range of themes, color palettes, and options for tweaking graph elements.
 
+SAS: While SAS offers powerful graphing capabilities, its syntax might be perceived as more complex and verbose compared to ggplot2. SAS also allows customization, but the level of control might require more effort in some cases compared to ggplot2.
 
-::: {.notes}
+Creative Building Bricks 1. ggplot2 more options
+:::
 
+## What's CDISC/ADaM?
 
-Creative Building Bricks
-::: 
-
-## What's ADaM?
-
-> ADaM defines dataset and metadata standards that support:
-> efficient generation, replication, and review of clinical trial statistical analyses, and traceability among analysis results, analysis data, and data represented in the Study Data Tabulation Model (SDTM).
-> ADaM is one of the required standards for data submission to FDA (U.S.) and PMDA (Japan).
+::: notes
+ADaM defines dataset and metadata standards that support: efficient generation, replication, and review of clinical trial statistical analyses, and traceability among analysis results, analysis data, and data represented in the Study Data Tabulation Model (SDTM). ADaM is one of the required standards for data submission to FDA (U.S.) and PMDA (Japan).
+:::
 
 ## Why Pharmaverse?
 
@@ -133,49 +161,50 @@ Creative Building Bricks
 
 ::: incremental
 -   Pilot submission through R Consortium R Submission Working Group
-
 -   Work closely with CDISC (Clinical Data Interchange Standards Consortium) working group
-
 -   Advertising through conferences/social media/blog post
 :::
 
+::: notes
+-   a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions.
 
-
-::: {.notes}
-- a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions.
-
-- follow the latest standards
-
-- 
+-   follow the latest standards
 :::
+
 ## How to take advantage of existing tools?
 
 ::: incremental
 -   Actively evaluating what's available in the industry
+
 -   Familiar with company-specific metadata/standards
+
 -   Compare with internal SAS macro system
+
 -   Bridge the gap between open-source R packages and the company's internal resources.
 :::
 
 ::: fragment
-![](bridge.png){fig-align="center" width="40%"}
+![](bridge.png){fig-align="center" width="8cm" height="4cm"}
 :::
+ 
 
 ## Strategies
 
-3 repos Study work with R: development/testing area, focusing `admiral` and its extension package
+-   dy work with R: development/testing area, focusing `admiral` and its extension package
 
-Leverage metadata/define.xml metacore metatools xportr Validation diffdf arsenal - Quarto website for knowledge sharing.
+Leverage metadata/define.xml metacore metatools xportr Validation diffdf arsenal - Q
+ua  rto website for knowledge sharing.
 
 -   Internal R package: A toolbox that enables users from Bayer to program ADaM according to the Bayer-specific standard. It also includes a set of functions for the definx.xml process in R, allowing for smooth utilization of pharmaverse packages within the Bayer environment.
 
-# Conclusion 
-
-- R can be used as a powerful complement to traditional statistical programming languages, such as SAS. 
-- Collaborate across the industry to tackle common problems
-- Closer relationship between user and developers to deliver better products 
-- Provide value to their organizations/industry.
+# C
 
 
+onclusion
+
+-   R can be used as a powerful complement to traditional statistical programming languages, such as SAS.
+-   Collaborate across the industry to tackle common problems
+-   Closer relationship between user and developers to deliver better products
+-   Provide value to their organizations/industry.
 
 # Health for all, Hunger for none
