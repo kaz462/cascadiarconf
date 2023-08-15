@@ -51,8 +51,10 @@ ggplot(data, aes(x=Year)) +
 
 ::: notes
 Two slopes
-1. mid 2021, ggplot2
-2. mid 2022, start exploring cross industry tools
+
+1\. mid 2021, ggplot2
+
+2\. mid 2022, start exploring cross industry tools
 :::
 
 ## Three Pairs of Relationship
@@ -91,10 +93,9 @@ Understanding the "why" to help us better support statisticians
 :::
 :::
 
-
 ::: notes
-1. it's not always the case to have a clear specification, specs are clarified/updated through the programming process
-2. propose new layout/methods of displaying to improve efficiency
+1.  it's not always the case to have a clear specification, specs are clarified/updated through the programming process
+2.  propose new layout/methods of displaying to improve efficiency
 :::
 
 ## One Job
@@ -112,12 +113,10 @@ Understanding the "why" to help us better support statisticians
 :::
 
 ::: notes
-1. technical/programming skills: SAS/R and ability to build new tools 
-2. domain knowledge and communication skills
-3. clinical reporting with toolbox
-3. make new tools: see repetitions in work as opportunities to improve efficiency.
-
-
+1.  technical/programming skills: SAS/R and ability to build new tools
+2.  domain knowledge and communication skills
+3.  clinical reporting with toolbox
+4.  make new tools: see repetitions in work as opportunities to improve efficiency.
 :::
 
 # Initiatives in R
@@ -158,17 +157,15 @@ Understanding the "why" to help us better support statisticians
 :::
 
 ::: notes
-p1. useful for "often-used" graphs but
-- lack of flexibility
-- learning curve, require good documentation, heavily reply on internal expert
+p1. useful for "often-used" graphs but - lack of flexibility - learning curve, require good documentation, heavily reply on internal expert
 
-P2. Creative Building Bricks-ggplot2: intuitive and layered grammar of graphics approach
-- easier to create complex visualizations with relatively concise code.
-- high level of customization with a wide range of themes, color palettes, and options for tweaking graph elements.
+P2. Creative Building Bricks-ggplot2: intuitive and layered grammar of graphics approach - easier to create complex visualizations with relatively concise code. - high level of customization with a wide range of themes, color palettes, and options for tweaking graph elements.
 
 SAS: While SAS offers powerful graphing capabilities, also allows customization, but the level of control might require more effort in some cases compared to ggplot2.
 
-p3. The R Graph Gallery/ `falcon`/`nest` TLG Catalog under pharmaverse
+p3. lots of graph layout and ggplot2 extension packages
+
+e.g., The R Graph Gallery/ `falcon`/`nest` TLG Catalog under pharmaverse
 :::
 
 ## What's CDISC/ADaM?
@@ -193,18 +190,16 @@ p3. The R Graph Gallery/ `falcon`/`nest` TLG Catalog under pharmaverse
 the amount of code needed for creating an ADaM dataset
 :::
 
-
 ## Does it work?
 
 -   Collaborate with CDISC to align with the latest standard
 -   Pilot submissions to FDA through R Consortium's R Submission Working Group
--   Advertising through conferences, social media, and blog post 
+-   Advertising through conferences, social media, and blog post
 
 ![](doesitwork.PNG){fig-align="center"}
 
 ::: notes
 -   a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions - to illustrate it works, and provide guidance on how it works
-
 :::
 
 ## How to take advantage of existing tools?
@@ -224,9 +219,11 @@ the amount of code needed for creating an ADaM dataset
 :::
 
 ## Strategies
+
 ::: fragment
-![](Strategies.PNG){fig-align="center" }
+![](Strategies.PNG){fig-align="center"}
 :::
+
 ::: notes
 -   3 repos for people with different skills
 -   Stay up-to-date with the latest R package issue status raised by Bayer users/Ensure users are informed about any ongoing issues and workaround
