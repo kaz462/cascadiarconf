@@ -23,7 +23,8 @@ data <- tribble(
   2020, 0,  100,
   2021, 0,  100,
   2021.5, 0,  100,
-  2022, 20,  80,
+  # 2022, 20,  80,
+  2022.5, 20,  80,
   2023, 80,  20,
   2023.5, 80,  20
 )
@@ -47,6 +48,12 @@ ggplot(data, aes(x=Year)) +
   ) +
   ggtitle("My SAS & R Usage (%) as a Statistical Programmer") 
 ```
+
+::: notes
+Two slopes
+1. mid 2021, ggplot2
+2. mid 2022, start exploring cross industry tools
+:::
 
 ## Three Pairs of Relationship
 
