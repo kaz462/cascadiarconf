@@ -196,9 +196,8 @@ the amount of code needed for creating an ADaM dataset
 ![](doesitwork.PNG){fig-align="center"}
 
 ::: notes
--   a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions.
+-   a cross industry pharma working group focusing on improving practices of R-based clinical trial regulatory submissions - to illustrate it works, and provide guidance on how it works
 
--   follow the latest standards
 :::
 
 ## How to take advantage of existing tools?
@@ -230,6 +229,6 @@ the amount of code needed for creating an ADaM dataset
 
 -   R can serve as a powerful complement to SAS, particularly for data visualizations
 -   Collaborate across the industry to tackle common problems
--   Closer relationship between user and developers to deliver better products
+-   Growing user base and closer relationship between user & developers lead to the delivery of better products.
 
 # Health for all, Hunger for none
