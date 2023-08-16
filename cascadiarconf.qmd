@@ -14,6 +14,9 @@ slide-number: true
 
 ## Four Years
 
+::: {.r-stack}
+::: {.fragment}
+
 ```{r}
 library(tibble)
 library(ggplot2)
@@ -25,14 +28,14 @@ data <- tribble(
   2021.5, 0,  100,
   # 2022, 20,  80,
   2022.5, 20,  80,
-  2023, 80,  20,
+  2023.4, 80,  20,
   2023.5, 80,  20
 )
 
 temperatureColor <- "#69b3a2"
 priceColor <- rgb(0.2, 0.6, 0.9, 1)
 
-ggplot(data, aes(x=Year)) +
+f1 <- ggplot(data, aes(x=Year)) +
   geom_line( aes(y=R, group = 1), size=2, color=temperatureColor) + 
   geom_line( aes(y=SAS, group = 1), size=2, color=priceColor) + 
   scale_y_continuous(
@@ -47,7 +50,43 @@ ggplot(data, aes(x=Year)) +
     axis.title.y.right = element_text(color = priceColor, size=13)
   ) +
   ggtitle("My SAS & R Usage (%) as a Statistical Programmer") 
+f1
 ```
+
+:::
+
+::: {.fragment}
+
+```{r}
+f1 +
+  geom_rect(aes(xmin = 2019, xmax = 2021.5, ymin = -Inf, ymax = Inf),
+            alpha = 0.05,
+            fill = "orange") 
+```
+:::
+
+::: {.fragment}
+
+```{r}
+f2 <- f1 +
+  geom_rect(aes(xmin = 2021.5, xmax = 2022.5, ymin = -Inf, ymax = Inf),
+            alpha = 0.05,
+            fill = "orange") 
+f2
+```
+:::
+::: {.fragment}
+
+```{r}
+f3 <- f1 +
+  geom_rect(aes(xmin = 2022.5, xmax = 2023.4, ymin = -Inf, ymax = Inf),
+            alpha = 0.05,
+            fill = "orange")
+f3
+```
+:::
+:::
+
 
 ::: notes
 Two slopes
@@ -159,7 +198,7 @@ Understanding the "why" to help us better support statisticians
 ::: notes
 p1. useful for "often-used" graphs but - lack of flexibility - learning curve, require good documentation, heavily reply on internal expert
 
-P2. Creative Building Bricks-ggplot2: intuitive and layered grammar of graphics approach - easier to create complex visualizations with relatively concise code. - high level of customization with a wide range of themes, color palettes, and options for tweaking graph elements.
+P2. Creative Building Bricks-ggplot2(a complement to SAS graphs): intuitive and layered grammar of graphics approach - easier to create complex visualizations with relatively concise code. - high level of customization with a wide range of themes, color palettes, and options for tweaking graph elements.
 
 SAS: While SAS offers powerful graphing capabilities, also allows customization, but the level of control might require more effort in some cases compared to ggplot2.
 
