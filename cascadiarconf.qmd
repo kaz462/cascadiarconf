@@ -191,7 +191,7 @@ Understanding the "why" to help us better support statisticians
 
 ![](lego_templates.jpg){.fragment .absolute left="50" bottom="10" width="100%"}
 
-![](ggplots.PNG){.fragment .absolute left="50" bottom="21"  width="100%"}
+![](ggplots2.PNG){.fragment .absolute left="50" bottom="26" width="120%"}
 :::
 
 ::: notes
@@ -206,13 +206,15 @@ p3. lots of graph layout and ggplot2 extension packages
 e.g., The R Graph Gallery/ `falcon`/`nest` TLG Catalog under pharmaverse
 :::
 
-## What's CDISC/ADaM?
+## Develop ADaM datasets
+
+What's CDISC/ADaM?
 
 -   CDISC: Clinical Data Interchange Standards Consortium
 
 -   ADaM standards outline how to create analysis datasets and associated metadata
 
-![](cdiscstd.PNG){.fragment width="10.5in" height="3.4in"}
+![](cdiscstd.PNG){.fragment .absolute width="10.5in" height="3.4in" bottom="20"}
 
 ::: notes
 -   CDISC is a global not-for-profit organization that actively develops data standards for pharmaceutical industry.
@@ -228,7 +230,7 @@ e.g., The R Graph Gallery/ `falcon`/`nest` TLG Catalog under pharmaverse
 the amount of code needed for creating an ADaM dataset
 :::
 
-## Does it work?
+## How does it work?
 
 -   Collaborate with CDISC to align with the latest standard
 -   Pilot submissions to FDA through R Consortium's R Submission Working Group
@@ -273,3 +275,14 @@ the amount of code needed for creating an ADaM dataset
 -   Collaborate across the industry to tackle common problems
 -   Growing user base and closer relationship between user & developers lead to the delivery of better products
 -   Expanding talent pool benefits recruitment, fostering innovation, and driving continuous improvement.
+
+# Reference
+::: {style="font-size:30px"}
+
+-   Pharmaverse: https://github.com/pharmaverse
+-   CDISC: https://www.cdisc.org/
+-   R Submissions Working Group: https://rconsortium.github.io/submissions-wg/
+-   Survival plot: https://rpkgs.datanovia.com/survminer/
+-   Box plot: https://bookdown.org/kdonovan125/ibis_data_analysis_r4/creating-graphs-with-ggplot2.html
+-   Waterfall & Spaghetti plots: https://bayer-group.github.io/sas2r/figures-plots.html
+::: 
